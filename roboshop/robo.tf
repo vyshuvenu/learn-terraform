@@ -7,7 +7,7 @@ resource "aws_instance" "frontend" {
   }
 }
 resource "aws_route53_record" "frontend" {
-zone_id = "Z02452941A9F"
+zone_id = "Z02452941A9F33HFSFSY2"
 name    = "frontend.vyshu.online"
 type    = "A"
 ttl     = 30
