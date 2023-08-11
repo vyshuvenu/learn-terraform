@@ -29,7 +29,7 @@ resource null_resource "ansible" {
 cd /home/centos/robo-ansible-roles
 git pull
 sleep 30
-ansible-playbook -i ${var.name}-dev.vyshu.online, main.yml -e "ansible_user=centos ansible_password=DevOps321" component_role=${var.name}
+ansible-playbook -i ${var.name}-dev.vyshu.online, main.yml -e "ansible_user=centos ansible_password=DevOps321 component_role=${var.name}"
 EOF
   }
 }
