@@ -1,4 +1,4 @@
-variable "components" {
+variable "components1" {
   default = {
     frontend = { name = "frontend_sg" }
     catalogue = { name = "catalogue_sg" }
@@ -7,8 +7,8 @@ variable "components" {
 }
 
 
-resource "aws_security_group" "allow_tls" {
-  for_each = var.components
-  name        = lookup(var.components, each.value["name"], null)
+resource "aws_security_group" "allow_tls1" {
+  for_each = var.components1
+  name        = lookup(var.components1, each.value["name"], null)
 }
 
