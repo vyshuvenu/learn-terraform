@@ -24,7 +24,7 @@ resource null_resource "ansible" {
   depends_on = [
     aws_route53_record.record
   ]
-  provisioner "local-exec" {
+  provisioner "local-exec" "ansible" {
     command = <<EOF
 cd /home/centos/robo-ansible-roles
 git pull
